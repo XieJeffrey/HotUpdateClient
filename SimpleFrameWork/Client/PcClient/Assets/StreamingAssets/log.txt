@@ -1,0 +1,7 @@
+=====================MainImpl is awake===========UnityEngine.Debug:Log(Object)
+Logger:Log(String, Object[]) (at Assets/Script/Util/Logger.cs:9)
+Main:Start() (at Assets/Script/Main.cs:24)
+
+NullReferenceException: Object reference not set to an instance of an objectMain.GameInit () (at Assets/Script/Main.cs:115)
+Main.Start () (at Assets/Script/Main.cs:28)
+

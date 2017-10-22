@@ -1,0 +1,9 @@
+=====================MainImpl is awake===========UnityEngine.Debug:Log(Object)
+Logger:Log(String, Object[]) (at Assets/Script/Util/Logger.cs:9)
+Main:Start() (at Assets/Script/Main.cs:24)
+
+Failed to connect to localhost port 80: Connection refusedUnityEngine.Debug:LogError(Object)
+Logger:Error(String, Object[]) (at Assets/Script/Util/Logger.cs:19)
+<DoCheckAppVersion>c__Iterator1:MoveNext() (at Assets/Script/Helper/UpdateHelper.cs:110)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+

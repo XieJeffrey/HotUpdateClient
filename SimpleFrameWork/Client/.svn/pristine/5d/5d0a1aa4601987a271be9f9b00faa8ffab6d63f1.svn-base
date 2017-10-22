@@ -1,0 +1,20 @@
+=====================MainImpl is awake===========UnityEngine.Debug:Log(Object)
+Logger:Log(String, Object[]) (at Assets/Script/Util/Logger.cs:9)
+Main:Start() (at Assets/Script/Main.cs:24)
+
+--------------------DLL加载成功-----------------UnityEngine.Debug:Log(Object)
+Logger:Log(String, Object[]) (at Assets/Script/Util/Logger.cs:9)
+Main:LoadDLL() (at Assets/Script/Main.cs:102)
+Main:GameInit() (at Assets/Script/Main.cs:114)
+Main:Start() (at Assets/Script/Main.cs:28)
+
+CreateUnityEngine.Debug:Log(Object)
+Main:GameInit() (at Assets/Script/Main.cs:121)
+Main:Start() (at Assets/Script/Main.cs:28)
+
+GameManager awakeUnityEngine.Debug:Log(Object)
+GameManager:Awake()
+UnityEngine.GameObject:AddComponent(Type)
+Main:GameInit() (at Assets/Script/Main.cs:124)
+Main:Start() (at Assets/Script/Main.cs:28)
+

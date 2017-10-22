@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7C0D18B-FAD8-4913-8412-DC18624EFB33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClientImpl</RootNamespace>
+    <AssemblyName>ClientImpl</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>Plugins\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Plugins\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Impl\Base\BaseType.cs" />
+    <Compile Include="Impl\Base\emptyMono.cs" />
+    <Compile Include="Impl\Base\EventManager.cs" />
+    <Compile Include="Impl\Base\GameManager.cs" />
+    <Compile Include="Impl\Base\GameState.cs" />
+    <Compile Include="Impl\Base\Singleton.cs" />
+    <Compile Include="Impl\Base\SingletonWindow.cs" />
+    <Compile Include="Impl\Base\UIEventListener.cs" />
+    <Compile Include="Impl\Base\Window.cs" />
+    <Compile Include="Impl\Base\WindowFactory.cs" />
+    <Compile Include="Impl\Base\WindowManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Impl\Base.meta" />
+    <None Include="Impl\Base\BaseType.cs.meta" />
+    <None Include="Impl\Base\emptyMono.cs.meta" />
+    <None Include="Impl\Base\EventManager.cs.meta" />
+    <None Include="Impl\Base\GameManager.cs.meta" />
+    <None Include="Impl\Base\GameState.cs.meta" />
+    <None Include="Impl\Base\Singleton.cs.meta" />
+    <None Include="Impl\Base\SingletonWindow.cs.meta" />
+    <None Include="Impl\Base\UIEventListener.cs.meta" />
+    <None Include="Impl\Base\Window.cs.meta" />
+    <None Include="Impl\Base\WindowFactory.cs.meta" />
+    <None Include="Impl\Base\WindowManager.cs.meta" />
+    <None Include="Impl\Helper.meta" />
+    <None Include="Impl\Manager.meta" />
+    <None Include="Impl\Script.meta" />
+    <None Include="Impl\Window.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Impl\Helper\" />
+    <Folder Include="Impl\Manager\" />
+    <Folder Include="Impl\Script\" />
+    <Folder Include="Impl\Window\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
